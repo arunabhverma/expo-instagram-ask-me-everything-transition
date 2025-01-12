@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.arunabh-decaf.expo-instagram-ask-me-everything-transition"
     },
     "android": {
       "adaptiveIcon": {
