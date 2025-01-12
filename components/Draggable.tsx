@@ -90,16 +90,8 @@ export const Draggable = ({ children }: { children: React.ReactNode }) => {
 
   const compose = Gesture.Simultaneous(pan, longPress);
 
-  const animatedStyle = useAnimatedStyle(() => {
-    return {
-      width: CardWidth.value,
-      height: CardHeight.value,
-    };
-  });
-
   return (
     <GestureHandlerRootView style={{ position: "absolute" }}>
-      <Animated.View style={animatedStyle} />
       <GestureDetector gesture={compose}>
         <Animated.View
           style={[styles.container, containerAnimatedStyle]}
