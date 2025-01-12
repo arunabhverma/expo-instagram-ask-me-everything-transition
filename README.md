@@ -22,7 +22,7 @@ Check out the "Ask Me a Question!" card in action 👇:
 
 - **Keyboard Interaction**: The card leverages RNKC's useReanimatedKeyboardAnimation hook to track the keyboard's height and progress. Based on this progress, the card's position is dynamically adjusted using the screen and keyboard height, ensuring it remains centered in the available space for a well-balanced layout.
   
-- **Blurred Background**: When the keyboard appears, the background becomes blurred using the Expo Blur View, with its opacity smoothly transitioning from 0 to 1 via Reanimated, creating a polished UI experience. This is just a demo for keyboard transitions. The recommended and proper approach is to use react-native-portal to render the blurred background. This ensures it remains on top of all content, allowing the underlying screen content to stay accessible and unaffected.
+- **Blurred Background**: When the keyboard appears, the background becomes blurred using the Expo Blur View, with its opacity smoothly transitioning from 0 to 1 via Reanimated, creating a polished UI experience. This is just a demo for keyboard transitions. The recommended and proper approach is to use `react-native-portal` to render the blurred background. This ensures it remains on top of all content, allowing the underlying screen content to stay accessible and unaffected.
 
 - **Animation with Reanimated**: The card uses Reanimated for scaling and drag and drop animations, providing smooth transitions between states.
 
