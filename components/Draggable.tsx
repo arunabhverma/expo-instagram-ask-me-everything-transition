@@ -20,8 +20,8 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export const Draggable = ({ children }: { children: React.ReactNode }) => {
   const { progress, height } = useReanimatedKeyboardAnimation();
-  const offsetX = useSharedValue(0);
-  const offsetY = useSharedValue(0);
+  const offsetX = useSharedValue(130);
+  const offsetY = useSharedValue(600);
   const scale = useSharedValue(0.75);
   const isDraggable = useSharedValue(false);
   const { top } = useSafeAreaInsets();
