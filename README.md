@@ -1,50 +1,42 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+https://github.com/user-attachments/assets/c40149ca-e800-4341-b808-93ae871e0810
+# Instagram Ask Me Anything Card
 
-## Get started
+Demonstrates of Instagram's "Ask Me Anything Card" with smooth transitions and animations. It showcases how to position the card dynamically above the keyboard. Built using [Expo](https://expo.dev/), [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/), and [react-native-keyboard-controller](https://github.com/kirillzyusko/react-native-keyboard-controller), and blur effects from [Expo Blur](https://docs.expo.dev/versions/latest/sdk/blur-view/).
 
-1. Install dependencies
+## Demo
 
-   ```bash
-   npm install
-   ```
+Check out the "Ask Me Anything" card in action 👇:
 
-2. Start the app
+| iOS                                                                                                                        |
+|--------------------------------------------------------------------------------------------------------------------------------|
+| <video src="https://github.com/user-attachments/assets/f3d7a982-4f19-4185-8baf-c8265902cee7" /> |
 
-   ```bash
-    npx expo start
-   ```
+## Features
 
-In the output, you'll find options to open the app in a
+- **Dynamic Keyboard Interaction**: The card adjusts its position dynamically to stay perfectly centered above the keyboard.
+- **Blurred Background**: Uses Expo's blur view to blur the background when the keyboard is open.
+- **Smooth Transitions**: React Native Keyboard Controller was instrumental in achieving buttery smooth transitions when the keyboard opens and closes.
+- **Drag n Drop**: Reanimated's API provides excellent support for implementing drag and drop effects.
+- **Scaling while Panning**: The card scales up when grabbed and smoothly returns to its original scale when dropped, creating a satisfying grab-and-drop effect.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## How It Works
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Keyboard Interaction**: The card's position is calculated dynamically using the screen height, keyboard height, and a fixed gap. The card is centered in the remaining space, providing a balanced layout.
+  
+- **Blurred Background**: When the keyboard appears, the background becomes blurred using the Expo Blur View, creating a cohesive and polished UI experience.
 
-## Get a fresh project
+- **Animation with Reanimated**: The card uses Reanimated for scaling and drag and drop animations, providing smooth transitions between states.
 
-When you're ready, run:
+- **Keyboard Controller Integration**: Leveraging `react-native-keyboard-controller` allows for precise timing and synchronization between the keyboard's appearance and the card's animation.
 
-```bash
-npm run reset-project
-```
+## Acknowledgments
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **[Expo](https://expo.dev/)**: For simplifying cross-platform mobile development.
+- **[Reanimated](https://docs.swmansion.com/react-native-reanimated/)**: For creating fluid, hardware-accelerated animations.
+- **[Expo Blur](https://docs.expo.dev/versions/latest/sdk/blur-view/)**: For enhancing the visual quality of the UI with native blur effects.
+- **[react-native-keyboard-controller](https://github.com/kirillzyusko/react-native-keyboard-controller)**: A special shoutout to its author, [@kirillzyusko](https://github.com/Ramotion), for this amazing library that simplifies animations synchronized with the keyboard.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feel free to fork the project and contribute by submitting a pull request (PR) for new features, bug fixes, or overall improvements!
