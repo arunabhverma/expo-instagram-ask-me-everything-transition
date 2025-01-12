@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, TextInput, View } from "react-native";
 import React, { useState } from "react";
 
 export const AskMeAnythingCard = () => {
+  const [value, setValue] = useState("");
   const [activeInput, setActiveInput] = useState(false);
 
   const onFocus = () => {
@@ -9,7 +10,9 @@ export const AskMeAnythingCard = () => {
   };
 
   const onBlur = () => {
-    setActiveInput(false);
+    if (value.length === 0) {
+      setActiveInput(false);
+    }
   };
 
   return (
@@ -25,6 +28,8 @@ export const AskMeAnythingCard = () => {
         <Text style={styles.textStyle}>Ask me anything!</Text>
       </View>
       <TextInput
+        value={value}
+        onChangeText={setValue}
         onFocus={onFocus}
         onBlur={onBlur}
         placeholder="Type something..."
