@@ -9,7 +9,7 @@ export const AskMeAnythingCard = () => {
   };
 
   const onBlur = () => {
-    setActiveInput(true);
+    setActiveInput(false);
   };
 
   return (
